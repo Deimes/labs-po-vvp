@@ -1,0 +1,48 @@
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Код_Лабораторной_7__1_7__шарп 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int A; 
+Console.Write("Введите число A в диапазоне 1-999: "); 
+A = int.Parse(Console.ReadLine()); 
+if (A % 2 == 0) 
+{ 
+if (A >= 100 && A < 1000) 
+{ 
+Console.Write("Число " + A + " четное трехзначное"); 
+} 
+else if (A >= 10 && A < 100) 
+{ 
+Console.Write("Число " + A + " четное двузначное"); 
+} 
+else 
+{ 
+Console.Write("Число " + A + " четное однозначное"); 
+} 
+} 
+else 
+{ 
+if (A >= 100 && A < 1000) 
+{ 
+Console.Write("Число " + A + " нечетное трехзначное"); 
+} 
+else if (A >= 10 && A < 100) 
+{ 
+Console.Write("Число " + A + " нечетное двузначное"); 
+} 
+else 
+{ 
+Console.Write("Число " + A + " нечетное однозначное"); 
+} 
+} 
+Console.ReadKey(); 
+} 
+} 
+}
