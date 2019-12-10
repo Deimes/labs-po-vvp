@@ -1,0 +1,41 @@
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Код_Лабораторной_8__1_6__шарп 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int A; 
+Console.Write("Введите A: "); 
+A = int.Parse(Console.ReadLine()); 
+if (A > 0) 
+{ 
+if (A % 2 == 1) 
+{ 
+Console.Write("Число " + A +  " положительное нечетное"); 
+} 
+else 
+{ 
+Console.Write("Число " + A + " положительное четное"); 
+} 
+} 
+else if (A < 0) 
+{ 
+if (A % 2 == -1) 
+{ 
+Console.Write("Число " + A + " отрицательное нечетное"); 
+} 
+else 
+{ 
+Console.Write("Число " + A + " отрицательное четное"); 
+} 
+} 
+else Console.Write("Число A нулевое"); 
+Console.ReadKey(); 
+} 
+} 
+}
