@@ -1,0 +1,33 @@
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Код_Лабораторной_8__1_6__шарп 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int A, B; 
+Console.Write("Введите A: "); 
+A = int.Parse(Console.ReadLine()); 
+Console.Write("Введите B: "); 
+B = int.Parse(Console.ReadLine()); 
+if (A == B) 
+{ 
+A = B = 0; 
+} 
+if (A > B)  
+{ 
+B = A; 
+} 
+else 
+{ 
+A = B; 
+} 
+Console.Write("Новые значения A и B: " + A + " " + B); 
+Console.ReadKey();  
+} 
+} 
+}
