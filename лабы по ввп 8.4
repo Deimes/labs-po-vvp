@@ -1,0 +1,43 @@
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Код_Лабораторной_8__1_6__шарп 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+float x, y; 
+Console.WriteLine("Введите координаты точки, не лежащей на осях: "); 
+Console.Write("x = "); 
+x = float.Parse(Console.ReadLine()); 
+Console.Write("y = "); 
+y = float.Parse(Console.ReadLine()); 
+if (x>0) 
+{ 
+if (y > 0) 
+{ 
+Console.WriteLine("Точка лежит в первой четверти координатной системы"); 
+} 
+else 
+{ 
+Console.WriteLine("Точка лежит в четвертой четверти координатной системы"); 
+} 
+} 
+else 
+{ 
+if (y > 0) 
+{ 
+Console.WriteLine("Точка лежит во второй четверти координатной системы"); 
+} 
+else 
+{ 
+Console.WriteLine("Точка лежит в третьей четверти координатной системы"); 
+} 
+} 
+Console.ReadKey(); 
+} 
+} 
+}
