@@ -1,0 +1,34 @@
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Код_Лабораторной_8__1_6__шарп 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int A, B, C; 
+Console.Write("Введите первое число: "); 
+A = int.Parse(Console.ReadLine()); 
+Console.Write("Введите второе число: "); 
+B = int.Parse(Console.ReadLine()); 
+Console.Write("Введите третье число: "); 
+C = int.Parse(Console.ReadLine()); 
+if (A > C && B > C) 
+{ 
+Console.WriteLine("Сумма наибольших чисел: " + (A + B)); 
+} 
+else if (B > A && C > A) 
+{ 
+Console.WriteLine("Сумма наибольших чисел: " + (B + C)); 
+} 
+else  
+{ 
+Console.WriteLine("Сумма наибольших чисел: " + (A + C)); 
+} 
+Console.ReadKey();  
+} 
+} 
+}
