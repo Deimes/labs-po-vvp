@@ -1,0 +1,29 @@
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Код_Лабораторной_9__1_5_ 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+string C; 
+int T, h, N; 
+string[] way = { "Север", "Запад", "Юг", "Восток" }; 
+Console.Write("Введите исходное направление робота («С» — север, «З» — запад, «Ю» — юг, «В» — восток): "); 
+C = string.Format(Console.ReadLine()); 
+h = 0; 
+if (C == "С") { h = 0; } 
+else if (C == "З") { h = 1; } 
+else if (C == "Ю") { h = 2; } 
+else if (C == "В") { h = 3; } 
+Console.Write("Введите команду (0 — продолжать движение, 1 —поворот налево, −1 — поворот направо): "); 
+N = int.Parse(Console.ReadLine()); 
+T = (h + N) % 4; 
+Console.Write("Нынешнее направление робота: " + way[T]); 
+Console.ReadKey(); 
+} 
+} 
+} 
