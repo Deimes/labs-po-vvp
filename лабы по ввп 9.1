@@ -1,0 +1,31 @@
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Text; 
+using System.Threading.Tasks; 
+namespace Код_Лабораторной_9__1_5_ 
+{ 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+int A, B; 
+string[] S = new string[9] { "первое ", "второе ", "третье ", "четвертое ", "пятое ", "шестое ", "седьмое ", "восьмое ", "девятое " }; 
+string[] D = new string[9] { "одинадцатое ", "двенадцатое ", "тринадцатое ", "четырнадцатое ", "пятнадцатое ", "шестнадцатое ", "семнадцатое ", "восемнадцатое ", "девятнадцатое " }; 
+string[] M = new string[12] { "января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря" }; 
+Console.Write("Введите номер дня: "); 
+A = int.Parse(Console.ReadLine()); 
+Console.Write("Введите номер месяца: "); 
+B = int.Parse(Console.ReadLine()); 
+if (A == 10) Console.Write("десятое "); 
+else if (A == 20) Console.Write("двадцатое "); 
+else if (A == 30) Console.Write("тридцатое "); 
+else if (A < 10) Console.Write(S[A - 1]); 
+else if (A < 20) Console.Write(D[A % 10 - 1]); 
+else if (A < 30) Console.Write("двадцать " + (S[A % 10 - 1])); 
+else Console.Write("тридцать первое "); 
+if (B < 13) Console.Write(M[B - 1]); 
+Console.ReadKey(); 
+} 
+} 
+} 
